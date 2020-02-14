@@ -12,51 +12,32 @@
     </script>
 </head>
 <body>
-    <header>
+	<main>
+	<header>
+		<div id="logo">
+			<img src="http://madera-construction.fr/images/site/logo.png" alt="logo madera">
+		</div>
         <h1>Connectez-vous à votre espace</h1>
     </header>
 
-    <nav></nav>
 
-    <form method="POST" action="messenger.html">
+    <nav>
+		<ul>
+			<li><a href="page1.html">Accueil</a></li>
+			<li><a href="page2.html">Connection</a></li>
+			<li><a href="page3.html">Qui sommes-nous ?</a></li>
+			<li><a href="page4.html">Contact</a></li>
+		</ul>
+	</nav>
+
+    <form method="POST" action="page1.html">
         <fieldset>
             <legend>Connexion</legend>
-            <input type="text" name="mat" maxlength="20" placeholder="Matricule"></input>
+            <input type="text" name="mat" maxlength="20" placeholder="Identifiant"></input>
             <input type="password" name="pwd" maxlength="20" placeholder="Mode passe"></input>
             <button type="submit" value="connexion">Connexion</button>
         </fieldset>
     </form>
-
-    <h2>Maison</h2>
-    <h3>Bière</h3>
-    <label for="choix_bieres">Indiquez votre type de bière préféré :</label>
-    <input list="bieres" type="text" id="choix_bieres">
-    <datalist id="bieres">
-        <option value="Blanche">
-        <option value="Blonde">
-        <option value="Ambrée">
-        <option value="Brune">
-        <option value="Rousse">
-        <option value="Rouge">
-        <option value="IPA">
-        <option value="Stout">
-        <option value="Kro (bouuh)">
-    </datalist>
-    <h3>Saucisson</h3>
-    <label for="choix_saucisson">Indiquez votre type de saucisson préféré :</label>
-    <input list="saucisson" type="text" id="choix_saucisson">
-    <datalist id="saucisson">
-        <option value="noisettes">
-        <option value="conté">
-        <option value="cèpes">
-        <option value="nature">
-        <option value="canard">
-        <option value="sanglier">
-        <option value="taureau">
-        <option value="poivre">
-        <option value="herbes">
-    </datalist>
-
-
+	</main>
 </body>
 </html>

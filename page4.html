@@ -5,19 +5,37 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function(){
-            $("nav").load("navbar.html");
-        });
-    </script>
+
 </head>
 <body>
-
-    <header>
-        <h1>Contactez nous !</h1>
+    <main>
+	<header>
+		<div id="logo">
+			<img src="http://madera-construction.fr/images/site/logo.png" alt="logo madera">
+		</div>
+        <h1>Contact</h1>
     </header>
 
-    <nav></nav>
+
+    <nav>
+		<ul>
+			<li><a href="page1.html">Accueil</a></li>
+			<li><a href="page2.html">Connection</a></li>
+			<li><a href="page3.html">Qui sommes-nous ?</a></li>
+			<li><a href="page4.html">Contact</a></li>
+		</ul>
+	</nav>
+	<form method="POST" action="page1.html">
+        <fieldset>
+            <legend>Contact</legend>
+            <input type="text" id="names" name="names" placeholder="Prénom NOM">
+			<input type="text" id="mail" name="mail" placeholder="adresse@gmail.com">
+			<textarea name="text" id="msg" cols="30" rows="6" placeholder="Que voulez-vous nous dire ?"></textarea>
+            <button type="submit" value="connexion">Envoyer</button>
+        </fieldset>
+    </form>
+	
+	</main>
 
 </body>
 </html>
